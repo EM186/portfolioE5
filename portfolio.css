@@ -2,7 +2,7 @@
   --primary-color: #2c3e50;
   --secondary-color: #ffa5e7;
   --accent-color: #ffb6f3;
-  --background-color: #ffddf6;
+  --background-color: #ff5ba2;
   --light-gray: #f8f9fa;
   --medium-gray: #e9ecef;
   --dark-gray: #6c757d;
@@ -115,7 +115,7 @@ strong {
   transition: var(--transition);
   font-weight: 500;
   letter-spacing: 0.3px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--background-color);
 }
 
 .btn:hover {
@@ -180,7 +180,7 @@ tbody tr:hover {
 
 td a {
   display: inline-block;
-  color: var(--secondary-color);
+  color: var(--background-color);
   text-decoration: none;
   font-weight: 500;
   padding: 0.4rem 0.8rem;
