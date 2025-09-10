@@ -1,7 +1,7 @@
 :root {
   --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
+  --secondary-color: #ffa5e7;
+  --accent-color: #ffb6f3;
   --light-gray: #f8f9fa;
   --medium-gray: #e9ecef;
   --dark-gray: #6c757d;
@@ -102,7 +102,8 @@ strong {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 1.2rem;
   padding: 0.8rem 1.5rem;
   background-color: var(--primary-color);
