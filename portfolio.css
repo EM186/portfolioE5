@@ -2,6 +2,7 @@
   --primary-color: #2c3e50;
   --secondary-color: #ffa5e7;
   --accent-color: #ffb6f3;
+  --background-color: #ffddf6;
   --light-gray: #f8f9fa;
   --medium-gray: #e9ecef;
   --dark-gray: #6c757d;
@@ -106,7 +107,7 @@ strong {
   justify-content: center;
   margin-top: 1.2rem;
   padding: 0.8rem 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -138,7 +139,7 @@ table {
 }
 
 thead th {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   color: white;
   padding: 1.2rem;
   font-weight: 600;
