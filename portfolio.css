@@ -3,6 +3,7 @@
   --secondary-color: #ffa5e7;
   --accent-color: #ffb6f3;
   --background-color: #ff5ba2;
+  --tertiary-color: #ff8ec2;
   --light-gray: #ffeaf6;
   --medium-gray: #e9ecef;
   --dark-gray: #7d6c7c;
@@ -18,7 +19,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fafaf6;
+  background-color: #ffe5ed;
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -38,7 +39,7 @@ header h1 {
   margin-bottom: 0.8rem;
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   letter-spacing: -0.5px;
 }
 
