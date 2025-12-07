@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veille - Emma ZHAO</title>
+  <title>PPE - Emma ZHAO</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -16,7 +16,7 @@
   
   <link rel="shortcut icon" type="image/x-icon" href="images/chiikawa_flaticon.png">
 </head>
-<body>
+<body class="px-4 sm:px-6 md:px-8">
 
   <!-- Navbar -->
   <div class="navbar bg-base-100 shadow-sm items-stretch min-h-0">
@@ -48,6 +48,8 @@
     <div class="divider"></div>
       
       <section class="ppe-section">
+
+      <div class="hidden md:block">
       <table>
         <thead>
           <tr>
@@ -122,6 +124,30 @@
           </tr>
         </tbody>
       </table>
+      </div>
+
+      <!-- Version mobile (cartes visibles sur mobile) -->
+      <div class="md:hidden space-y-4">
+        <!-- Carte 1 - Projet Portalis -->
+        <div class="card bg-base-200 shadow">
+          <div class="card-body p-4">
+            <h3 class="card-title text-lg">Projet Portalis</h3>
+            <p class="text-sm opacity-80 mb-2">Développer la présence en ligne de l'organisation</p>
+            <a href="Preuves/Portalis.pdf" target="_blank" class="btn btn-sm btn-primary">Voir la preuve</a>
+          </div>
+        </div>
+        
+        <!-- Carte 2 - Inventaires -->
+        <div class="card bg-base-200 shadow">
+          <div class="card-body p-4">
+            <h3 class="card-title text-lg">Inventaires réseau et matériel</h3>
+            <p class="text-sm opacity-80 mb-2">Gérer le patrimoine informatique</p>
+            <a href="Preuves/InventaireStage.pdf" target="_blank" class="btn btn-sm btn-primary">Voir la preuve</a>
+          </div>
+        </div>
+        
+        <!-- ... autres cartes ... -->
+      </div>
     </section>
 
 

@@ -66,7 +66,7 @@ body {
 }
 
 .acrostic-letter .letter {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     transition: all 0.3s ease;
     line-height: 1;
@@ -132,7 +132,7 @@ body {
 }
 
 .intro-text p {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -275,11 +275,11 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .acrostic-letter .letter {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .intro-text p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .project-card {
@@ -293,4 +293,6 @@ footer {
     .projects-section {
         padding: 2rem 1rem;
     }
+
+    
 }
