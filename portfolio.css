@@ -51,41 +51,37 @@ body {
 }
 
 /* Acrostiche */
+
+/* Acrostiche Container */
 .acrostic-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 4rem;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
+/* Acrostic Letter */
 .acrostic-letter {
     position: relative;
     cursor: pointer;
-    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    min-height: 60px;
 }
 
+/* Lettre principale */
 .acrostic-letter .letter {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Mobile */
     font-weight: bold;
     transition: all 0.3s ease;
     line-height: 1;
     display: block;
 }
 
-.acrostic-letter.primary .letter {
-    color: #f5bbb9;
-}
-
-.acrostic-letter.secondary .letter {
-    color: #725C3F;
-}
-
-.acrostic-letter:hover .letter {
-    transform: scale(1.1);
-}
-
-/* Acrostic Word avec Rectangle Background */
+/* Mots cachés - FIX POUR MOBILE */
 .acrostic-word {
     position: absolute;
     top: 100%;
@@ -95,6 +91,7 @@ body {
     flex-direction: column;
     align-items: center;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.5s ease;
     pointer-events: none;
     margin-top: 0.5rem;
@@ -105,13 +102,37 @@ body {
     border: 2px solid var(--color-base-300);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-width: 60px;
+    max-width: 80px;
 }
 
-.acrostic-letter:hover .acrostic-word {
+.acrostic-letter:hover .acrostic-word,
+.acrostic-letter:active .acrostic-word { /* :active */
     opacity: 1;
+    visibility: visible; 
     transform: translateX(-50%) translateY(0);
 }
 
+.acrostic-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Couleurs */
+.acrostic-letter.primary .letter {
+    color: var(--color-primary);
+}
+
+.acrostic-letter.secondary .letter {
+    color: var(--color-secondary-content);
+}
+
+.acrostic-letter:hover .letter {
+    transform: scale(1.1);
+}
+
+/* Mots au survol */
 .acrostic-word span {
     font-size: 0.9rem;
     padding: 0.15rem;
@@ -121,7 +142,7 @@ body {
 }
 
 .acrostic-word span:hover {
-    color: #f5bbb9;
+    color: var(--color-primary);
 }
 
 /* Introduction Text */
@@ -293,6 +314,35 @@ footer {
     .projects-section {
         padding: 2rem 1rem;
     }
+}
 
+@media (min-width: 768px) {
+    .acrostic-letter .letter {
+        font-size: 5rem; /* Desktop */
+    }
+    .acrostic-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem 3rem;
+    }
+    .intro-text p {
+        font-size: 1.5rem; /* Desktop */
+    }
+}
+
+@media (max-width: 768px) {
+    .acrostic-word {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
     
+    .acrostic-word span {
+        font-size: 0.75rem;
+        padding: 0.1rem;
+    }
+    
+    .intro-text p {
+        font-size: 1.125rem; /* Mobile */
+    }
 }
