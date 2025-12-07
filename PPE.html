@@ -18,25 +18,45 @@
 </head>
 <body class="px-4 sm:px-6 md:px-8">
 
-  <!-- Navbar -->
-  <div class="navbar bg-base-100 shadow-sm items-stretch min-h-0">
-  <div class="flex-1 flex items-center">
-    <a class="btn btn-ghost p-0 h-auto min-h-0" href="index.html">
-      <div class="flex items-center">
-        <img src="images/layingdown_Chiikawa.png" alt="chiikawa" class="h-28 w-28">
+  <!-- Navbar avec dropdown DaisyUI -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <!-- Partie gauche - Logo/Image -->
+      <div class="flex-1">
+        <a class="btn btn-ghost p-0 h-auto" href="index.html">
+          <img src="images/layingdown_Chiikawa.png" alt="chiikawa" 
+              class="h-24 w-24 md:h-28 md:w-28">
+        </a>
       </div>
-    </a>
-  </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <li><a href="index.html#cv_btn"> CV </a></li>
-        <li><a href="index.html#default-carousel"> Projets </a></li>
-        <li><a href="PPE.html" > PPE </a></li>
-        <li><a href="Veille.html"> Veille </a></li>
-        <li><a href="index.html#footer-icon" > Contact </a></li>
-      </ul>
+      
+      <!-- Menu desktop (visible sur desktop) -->
+      <div class="hidden md:flex flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html#cv_btn">CV</a></li>
+          <li><a href="index.html#default-carousel">Projets</a></li>
+          <li><a href="PPE.html">PPE</a></li>
+          <li><a href="Veille.html">Veille</a></li>
+          <li><a href="index.html#footer-icon">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Dropdown mobile (visible uniquement sur mobile) -->
+      <div class="flex-none md:hidden">
+        <div class="dropdown dropdown-end">
+          <div  tabindex="0" role="button" class="btn btn-ghost btn-circle" title="Menu de navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow">
+            <li><a href="index.html#cv_btn">CV</a></li>
+            <li><a href="index.html#default-carousel">Projets</a></li>
+            <li><a href="PPE.html">PPE</a></li>
+            <li><a href="Veille.html">Veille</a></li>
+            <li><a href="index.html#footer-icon">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
 
   <main class="container mx-auto px-4 py-8">
     
