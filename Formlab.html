@@ -37,18 +37,238 @@
         </div>
     </div>
 
-    <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content text-center">
-            <div class="max-w-md">
-            <h1 class="text-5xl font-bold"> En construction</h1>
-            <p class="py-6">
-                Cette page est en lien avec mon épreuve de BTS SIO
-            </p>
-            </div>
-
-            <img src="images/Chiikawaa.jpg" alt="chiikawa" class="h-64 w-64">
-        </div>
+    <main>
+    <div class="divider mt-12"></div>
+      <!-- En-tête du projet -->
+    <div class="text-center mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--color-primary-content);">
+        FormLab - Gestion de Formulaires PDF
+      </h1>
+      <p class="text-lg opacity-80">Premier projet BTS SIO - Application web complète</p>
+      <div class="flex flex-wrap justify-center gap-2 mt-4">
+        <span class="badge badge-primary">PHP</span>
+        <span class="badge badge-secondary">MySQL</span>
+        <span class="badge badge-accent">WAMP</span>
+        <span class="badge badge-primary">PDF</span>
+        <span class="badge badge-secondary">HTML/CSS</span>
+      </div>
     </div>
+
+    <div class="divider"></div>
+
+    <!-- Contenu principal : Carousel + Détails -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+      
+      <!-- Carousel à gauche -->
+      <div class="lg:order-1">
+        <div id="formlab-carousel" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-box shadow-lg">
+            
+            <!-- Item 1 - Page d'accueil -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_index.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Page d'accueil FormLab">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Page d'accueil avec connexion</p>
+              </div>
+            </div>
+            
+            <!-- Item 2 - Inscription -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_inscription.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Page d'inscription">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Formulaire d'inscription</p>
+              </div>
+            </div>
+            
+            <!-- Item 3 - Interface principale -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_interface.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Interface principale">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Interface de gestion des formulaires</p>
+              </div>
+            </div>
+            
+            <!-- Item 4 - Étape 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_Etape2.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Étape 2 du formulaire">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Étape 2 - Informations partenaires</p>
+              </div>
+            </div>
+            
+            <!-- Item 5 - Récapitulatif -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_recap.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Récapitulatif">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Récapitulatif avant génération PDF</p>
+              </div>
+            </div>
+            
+            <!-- Item 6 - Résultat PDF -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_resultat.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Résultat PDF">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">PDF généré avec les données</p>
+              </div>
+            </div>
+            
+            <!-- Item 7 - Impression -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="images/Formlab_impression.png" 
+                   class="absolute block w-full h-full object-contain bg-base-100 p-2" 
+                   alt="Impression PDF">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p class="text-white text-sm md:text-base">Option d'impression du PDF</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-1 left-1/2 space-x-3">
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+          </div>
+          
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 transition-colors">
+              <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+              </svg>
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 transition-colors">
+              <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+        
+        <!-- Légende sous le carousel -->
+        <p class="text-center text-sm opacity-70 mt-4 ">
+          Naviguez entre les captures d'écran pour voir les différentes fonctionnalités
+        </p>
+      </div>
+      
+      <!-- Détails du projet à droite -->
+      <div class="lg:order-2">
+        <div class="card bg-base-200 shadow-xl h-full">
+          <div class="card-body">
+            
+            <!-- Description -->
+            <div class="mb-6">
+              <h2 class="card-title text-2xl mb-4">Description du projet</h2>
+              <p class="mb-3">
+                FormLab est une application web qui permet de remplir automatiquement des formulaires PDF 
+                à partir des informations saisies par les utilisateurs. Développée dans le cadre du BTS SIO, 
+                c'est mon premier projet complet en PHP/MySQL.
+              </p>
+            </div>
+            
+            <!-- Fonctionnalités -->
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Fonctionnalités principales</h3>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span><strong>Gestion des utilisateurs</strong> : Création de compte, connexion, modification des informations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span><strong>Création de formulaires en 3 étapes</strong> avec validation en temps réel</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span><strong>Génération automatique de PDF</strong> avec les données saisies</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span><strong>CRUD complet</strong> : Liste, modification, suppression des formulaires</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span><strong>Gestion des sessions</strong> avec PHP (POST/GET)</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Étapes du formulaire -->
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Étapes du formulaire</h3>
+              <div class="space-y-3">
+                <div class="badge badge-outline p-3">Étape 1 : Informations générales (titre, périodes, adresse)</div>
+                <div class="badge badge-outline p-3">Étape 2 : Détails du contrat (partenaires, activités, lieu)</div>
+                <div class="badge badge-outline p-3">Étape 3 : Clauses (contributions, bénéfices, juridiction)</div>
+              </div>
+            </div>
+            
+            <!-- Technologies -->
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Technologies utilisées</h3>
+              <div class="flex flex-wrap gap-2">
+                <div class="tech-badge">PHP 8+</div>
+                <div class="tech-badge">MySQL</div>
+                <div class="tech-badge">WAMP</div>
+                <div class="tech-badge">phpMyAdmin</div>
+                <div class="tech-badge">HTML5/CSS3</div>
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">FPDF (PDF generation)</div>
+              </div>
+            </div>
+            
+            <!-- Compétences développées -->
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold mb-3">Compétences développées</h3>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="skill-item">Développement back-end PHP</div>
+                <div class="skill-item">Gestion de base de données</div>
+                <div class="skill-item">Manipulation de sessions</div>
+                <div class="skill-item">Génération de PDF</div>
+                <div class="skill-item">Interface utilisateur</div>
+                <div class="skill-item">Déploiement local</div>
+              </div>
+            </div>
+            
+            <!-- Boutons d'action -->
+            <div class="card-actions justify-center mt-6">
+              <a href="index.html#default-carousel" class="btn btn-outline btn-primary">
+                ← Retour aux projets
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider mt-12"></div>
+
+    <div class="text-center">
+      <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+  </main>
+
+  <div class="divider mt-12"></div>
 
     <!-- Footer -->
      <footer class="footer sm:footer-horizontal bg-primary text-primary-content p-9">
