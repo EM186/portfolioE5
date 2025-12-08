@@ -35,6 +35,32 @@
     box-sizing: border-box;
 }
 
+/* Mesure la hauteur exacte et l'utilise */
+:root {
+  --navbar-height-mobile: 80px; /* Ajuste selon ta navbar mobile */
+  --navbar-height-desktop: 100px; /* Ajuste selon ta navbar desktop */
+}
+
+html {
+  scroll-padding-top: var(--navbar-height-mobile);
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: var(--navbar-height-desktop);
+  }
+}
+
+.badge {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--color-base-100);
@@ -44,6 +70,12 @@ body {
     line-height: 1.7;
 }
 
+/* Ajouter dans votre CSS */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 /* Hero Section */
 .hero {
