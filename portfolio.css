@@ -190,6 +190,31 @@ body {
     line-height: 1.6;
 }
 
+.chiikawa_link {
+    color: var(--color-info);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    font-weight: 600;
+
+}
+
+.chiikawa_link:hover {
+    text-decoration: wavy;
+
+}
+
+.veille-text {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.veille-text p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
 /* CV Button */
 .btn-cv {
     display: inline-block;
